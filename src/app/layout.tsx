@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Rubik } from 'next/font/google'
 import { Header } from 'app/components/shared/Header'
 import { Footer } from 'app/components/shared/Footer'
-import './globals.css'
+import 'app/sass/globals.sass'
 
 const rubik = Rubik({ weight: ['300', '400', '500', '600', '700'], subsets: ['latin'] })
 

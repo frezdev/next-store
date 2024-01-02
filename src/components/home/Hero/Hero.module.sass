@@ -2,10 +2,22 @@
   display: flex
   flex-direction: column
   align-items: center
+  padding: 2rem 2.5rem
 
+  & > h1
+    background: $gradient
+    background-clip: text
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    font-size: 12rem
+    text-align: center
+    font-weight: 800
+    @media (width < 850px)
+      font-size: 8rem
 
-.hero > h1
-  font-size: 12rem
-  text-align: center
-  font-weight: 800
-  color: blueviolet
+  & > h2
+    color: $color-secondary
+    font-size: 3rem
+    text-align: center
+    @media (width < 850px)
+      font-size: 2rem
