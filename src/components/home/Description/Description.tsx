@@ -17,8 +17,6 @@ export function Description () {
     'description__imgContainer--border': hasBorder,
   })
 
-  console.log({imgContainerStyles})
-
   return (
     <section className={styles.description}>
       <figure onClick={handleClick} className={imgContainerStyles}>
