@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import { Rubik } from 'next/font/google'
-import { Header } from 'app/components/shared/Header'
-import { Footer } from 'app/components/shared/Footer'
-import 'app/sass/globals.sass'
+import { Header } from '@/src/components/shared/Header'
+import { Footer } from '@/src/components/shared/Footer'
+import '@/src/sass/globals.sass'
 
-const rubik = Rubik({ weight: ['300', '400', '500', '600', '700'], subsets: ['latin'] })
+const rubik = Rubik({ weight: ['400', '500', '600', '700'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Future Store',
@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={rubik.className}>
         <Header />
-        {children}
+        <main>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
