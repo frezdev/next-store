@@ -2,17 +2,17 @@
   display: grid
   grid-template-columns: 1fr 1fr
   gap: 2.25rem
-  max-width: 1000px
   margin: 6rem auto
-  padding: 2rem 2.5rem
+  padding: 2rem 3rem
   border-radius: 1.375rem
   @media (width < 800px)
     grid-template-columns: 1fr
 
   &__imgContainer
-    height: 300px
     position: relative
     cursor: pointer
+    @media (width < 800px)
+      height: 25rem
     &--border
       img
         border: 3px solid $main-color
@@ -22,6 +22,7 @@
       box-shadow: 0 0 4rem rgba(255, 255, 255, 0.2)
       width: 500px
       height: 300px
+
   &__text
     & > h2
       font-size: 3.5rem
